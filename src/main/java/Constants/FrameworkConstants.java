@@ -8,4 +8,5 @@ public class FrameworkConstants {
     public static final String DYNAMIC_ID_TILE = "dinamicId";
     public static final String CLASS_ATTRIBUTE_TILE = "classAttribute";
     public static final String HIDDEN_LAYERS_TILE = "hiddenLayers";
+    public static final String LOAD_DELAY_TILE = "loadDelays";
 }

@@ -1,5 +1,6 @@
 package pages;
 
+import Keywords.WebUi;
 import org.openqa.selenium.By;
 
 import static Keywords.WebUi.clickElement;
@@ -11,6 +12,10 @@ public class HiddenLayersPage {
 
     public static void clickprimaryButtonHiddenLayer(){
         clickElement(primaryButtonHiddenLayer);
+    }
+
+    public static boolean clickprimaryButtonSecondTime(){
+        return WebUi.verifyElementClickable(primaryButtonHiddenLayer);
     }
 
     public static void clicksecondaryButtonHiddenLayer(){
