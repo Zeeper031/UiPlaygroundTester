@@ -43,6 +43,17 @@ public class WebUi {
         return null;
     }
 
+    public static boolean verifyElementClickable(By by){
+        try{
+            WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(FrameworkConstants.WAIT_EXPLICIT), Duration.ofMillis(500));
+            wait.until(ExpectedConditions.elementToBeClickable(by));
+            return true;
+        }catch(Throwable error) {
+            LogUtils.error("❌ Timeout waiting for the element ready to click. " + by.toString());
+            return false;
+        }
+    }
+
     public static void reloadPage() {
         DriverManager.getDriver().navigate().refresh();
         waitForPageLoaded();

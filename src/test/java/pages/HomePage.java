@@ -43,6 +43,12 @@ public class HomePage {
             case FrameworkConstants.CLASS_ATTRIBUTE_TILE:
                 clickElement(classAtributeTile);
                 break;
+            case FrameworkConstants.HIDDEN_LAYERS_TILE:
+                clickElement(hiddenLayersTile);
+                break;
+            case FrameworkConstants.LOAD_DELAY_TILE:
+                clickElement(loadDelayTile);
+                break;
             default:
                 throw new IllegalArgumentException("Tile Opción not válid: " + Tile);
         }
