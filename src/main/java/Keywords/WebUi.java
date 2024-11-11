@@ -33,6 +33,18 @@ public class WebUi {
 
     }
 
+    public static boolean verifyElementPresent(By by){
+
+        try{
+            WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(FrameworkConstants.WAIT_EXPLICIT), Duration.ofMillis(500));
+            wait.until(ExpectedConditions.presenceOfElementLocated(by));
+            return true;
+        }catch(Exception e){
+            return false;
+        }
+    }
+
+
     public static WebElement waitForElementClickable(By by) {
         try {
             WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(FrameworkConstants.WAIT_EXPLICIT), Duration.ofMillis(500));

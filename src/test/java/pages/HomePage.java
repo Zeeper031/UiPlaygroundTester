@@ -49,6 +49,12 @@ public class HomePage {
             case FrameworkConstants.LOAD_DELAY_TILE:
                 clickElement(loadDelayTile);
                 break;
+            case FrameworkConstants.AJAX_Data_TILE:
+                clickElement(ajaxDataTile);
+                break;
+            case FrameworkConstants.CLICK_TILE:
+                clickElement(clickTile);
+                break;
             default:
                 throw new IllegalArgumentException("Tile Opción not válid: " + Tile);
         }
