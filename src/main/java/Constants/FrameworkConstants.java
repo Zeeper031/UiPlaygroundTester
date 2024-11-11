@@ -9,4 +9,6 @@ public class FrameworkConstants {
     public static final String CLASS_ATTRIBUTE_TILE = "classAttribute";
     public static final String HIDDEN_LAYERS_TILE = "hiddenLayers";
     public static final String LOAD_DELAY_TILE = "loadDelays";
+    public static final String AJAX_Data_TILE = "aJAXData";
+    public static final String CLICK_TILE = "click";
 }
